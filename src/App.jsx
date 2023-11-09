@@ -1,6 +1,5 @@
 import { useState } from "react";
 import React from 'react';
-
 export default function App() {
     const images = [
         {url:'images/pic1.jpg', alt:'Closeup of a human eye'},
@@ -29,7 +28,6 @@ export default function App() {
             setCol("rgba(0, 0, 0, 0)");
         }
     }
-
     return (
         <>
             <h1>Image gallery example</h1>
