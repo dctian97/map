@@ -32,14 +32,14 @@ export default function App() {
         <>
             <h1>Image gallery example</h1>
             <div className="full-img">
-                <img className="displayed-img" key={selectedImage.alt} src={"../src/" + selectedImage.url} alt={selectedImage.alt} />
+                <img className="displayed-img" key={selectedImage.alt} src={'./' + selectedImage.url} alt={selectedImage.alt} />
                 <div className="overlay" style={{backgroundColor:col}} ></div>
                 <button onClick={clickButton} className={cName}>{name}</button>
             </div>
             <div className="thumb-bar">
                 {images.map((img) => {
                     return (
-                        <img onClick={() => clickImg(img)} key={img.alt} src={"../src/" + img.url} alt={img.alt} />
+                        <img onClick={() => clickImg(img)} key={img.alt} src={'./' + img.url} alt={img.alt} />
                     );
                 })}
             </div>
